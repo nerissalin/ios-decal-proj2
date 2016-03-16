@@ -9,7 +9,7 @@
 import UIKit
 
 class StartScreenViewController: UIViewController {
-
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +21,13 @@ class StartScreenViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func loadInterface() {
+        
+    }
+    
+    @IBAction func unwindStartGameController(segue: UIStoryboardSegue){
+        
+    }
 
     /*
     // MARK: - Navigation

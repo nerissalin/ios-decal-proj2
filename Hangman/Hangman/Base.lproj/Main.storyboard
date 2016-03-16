@@ -1,26 +1,402 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ybr-pz-ULd">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
+        <!--Start Screen View Controller-->
+        <scene sceneID="QAB-Dc-uXD">
+            <objects>
+                <viewController id="ybr-pz-ULd" customClass="StartScreenViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bcu-2B-XRp"/>
+                        <viewControllerLayoutGuide type="bottom" id="WXP-4p-cDF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KqU-l1-gMU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cB-UP-wRU">
+                                <rect key="frame" x="176" y="371" width="248" height="86"/>
+                                <color key="backgroundColor" red="0.98739346590909094" green="0.98739346590909094" blue="0.98739346590909094" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="St_rt New G_me"/>
+                                <connections>
+                                    <segue destination="KWK-H2-uwr" kind="show" id="fGK-W1-HXg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="H_NGM_N" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maq-Y1-VKg">
+                                <rect key="frame" x="125" y="229" width="350" height="80"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="65"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cyan="0.64147306743421051" magenta="0.077945106907894732" yellow="0.18680612664473686" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                        <color key="tintColor" cyan="0.27004523026315791" magenta="0.0065789473684210523" yellow="0.0" black="0.0" alpha="0.72999999999999998" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PiP-hR-bje" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-302" y="355"/>
+        </scene>
         <!--Game View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="GameViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Dbx-Qc-yiR"/>
+                        <viewControllerLayoutGuide type="bottom" id="4hh-NW-WqC"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="Ybh-9Q-GVZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4VB-gq-0Kc">
+                                <rect key="frame" x="49" y="427" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="Q">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqc-gG-mxb">
+                                <rect key="frame" x="101" y="427" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="W">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MkH-Cn-tRa">
+                                <rect key="frame" x="153" y="427" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="E">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yii-1d-OrC">
+                                <rect key="frame" x="205" y="427" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="R">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a52-xL-6YK">
+                                <rect key="frame" x="257" y="427" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="T">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsa-JT-c4i">
+                                <rect key="frame" x="306" y="427" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="Y">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEE-fA-pd4">
+                                <rect key="frame" x="357" y="427" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="U">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYY-fk-PJw">
+                                <rect key="frame" x="410" y="427" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="I">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKL-Md-jvs">
+                                <rect key="frame" x="461" y="427" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="O">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85f-Sy-jam">
+                                <rect key="frame" x="513" y="427" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="P">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPN-he-9Fn">
+                                <rect key="frame" x="73" y="484" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="A">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNh-bb-f8h">
+                                <rect key="frame" x="125" y="484" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="S">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yb-HV-6W3">
+                                <rect key="frame" x="177" y="484" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="D">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEU-RF-dId">
+                                <rect key="frame" x="229" y="484" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="F">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKt-bJ-6aZ">
+                                <rect key="frame" x="281" y="484" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="G">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCf-iK-alk">
+                                <rect key="frame" x="333" y="484" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="H">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDy-vT-uGW">
+                                <rect key="frame" x="385" y="484" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="J">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3da-Qj-vKs">
+                                <rect key="frame" x="436" y="484" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="K">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LC4-sv-YvE">
+                                <rect key="frame" x="489" y="484" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="L">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVS-IC-Hpm">
+                                <rect key="frame" x="125" y="541" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="Z">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGe-RN-Ekq">
+                                <rect key="frame" x="177" y="541" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1P-jW-qAt">
+                                <rect key="frame" x="229" y="541" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="C">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gao-rt-F6O">
+                                <rect key="frame" x="281" y="541" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="V">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMi-2t-8ix">
+                                <rect key="frame" x="333" y="541" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="B">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYI-yC-wWO">
+                                <rect key="frame" x="385" y="541" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="N">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9i-Xk-8X5">
+                                <rect key="frame" x="436" y="541" width="38" height="39"/>
+                                <color key="backgroundColor" red="0.57242345328282829" green="0.2305079306143544" blue="0.54075081234122424" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="0.9862697712390962" blue="0.99656744280977405" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.0"/>
+                                <state key="normal" title="M">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwr-xo-ufJ">
+                                <rect key="frame" x="306" y="110" width="200" height="50"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Incorrect Guesses:">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="19" name="AmericanTypewriter"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpr-wi-jhv">
+                                <rect key="frame" x="306" y="160" width="200" height="150"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="-None-">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="AmericanTypewriter"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdV-RI-AZt">
+                                <rect key="frame" x="20" y="357" width="560" height="40"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Spaces for the word">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="AmericanTypewriter"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hangman1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Kqh-Ti-6Ny">
+                                <rect key="frame" x="49" y="110" width="200" height="200"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="bf5-q1-hsV">
+                        <barButtonItem key="rightBarButtonItem" title="Start Over" id="i2A-9Y-hTN">
+                            <connections>
+                                <segue destination="u34-0N-v0L" kind="unwind" identifier="StartNew" unwindAction="unwindStartGameController:" id="dvs-WP-4w9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="A" destination="KPN-he-9Fn" id="tQJ-5r-FD3"/>
+                        <outlet property="B" destination="kMi-2t-8ix" id="KHJ-gn-ptf"/>
+                        <outlet property="C" destination="h1P-jW-qAt" id="1Zv-9X-joC"/>
+                        <outlet property="D" destination="6yb-HV-6W3" id="Rs5-tk-DpI"/>
+                        <outlet property="E" destination="MkH-Cn-tRa" id="48D-TD-P0Q"/>
+                        <outlet property="F" destination="mEU-RF-dId" id="nRE-n1-8ji"/>
+                        <outlet property="G" destination="QKt-bJ-6aZ" id="xqj-gd-Evo"/>
+                        <outlet property="H" destination="GCf-iK-alk" id="Y0Z-19-Vyd"/>
+                        <outlet property="I" destination="XYY-fk-PJw" id="YzN-cY-rCD"/>
+                        <outlet property="Image" destination="Kqh-Ti-6Ny" id="aSs-Ie-uYn"/>
+                        <outlet property="J" destination="qDy-vT-uGW" id="Wgs-ID-05L"/>
+                        <outlet property="K" destination="3da-Qj-vKs" id="jkg-yl-6Lc"/>
+                        <outlet property="L" destination="LC4-sv-YvE" id="nhe-4k-Zge"/>
+                        <outlet property="M" destination="D9i-Xk-8X5" id="2qz-Zm-fb5"/>
+                        <outlet property="N" destination="dYI-yC-wWO" id="Uec-EA-u3F"/>
+                        <outlet property="O" destination="mKL-Md-jvs" id="nxt-GL-qEo"/>
+                        <outlet property="P" destination="85f-Sy-jam" id="9Ow-oo-i2a"/>
+                        <outlet property="Phrase" destination="GdV-RI-AZt" id="d6x-Jv-U8H"/>
+                        <outlet property="Q" destination="4VB-gq-0Kc" id="mq3-pJ-LA5"/>
+                        <outlet property="R" destination="yii-1d-OrC" id="GnH-E9-pY4"/>
+                        <outlet property="Reset" destination="i2A-9Y-hTN" id="VnE-W9-K4C"/>
+                        <outlet property="S" destination="DNh-bb-f8h" id="ob1-aY-8pA"/>
+                        <outlet property="T" destination="a52-xL-6YK" id="F2Q-ZD-Zhp"/>
+                        <outlet property="U" destination="lEE-fA-pd4" id="M4f-B2-T0x"/>
+                        <outlet property="V" destination="Gao-rt-F6O" id="RU1-ZE-fYy"/>
+                        <outlet property="W" destination="gqc-gG-mxb" id="6s5-kc-AfY"/>
+                        <outlet property="WrongGuesses" destination="bpr-wi-jhv" id="D5d-Zb-2xf"/>
+                        <outlet property="X" destination="yGe-RN-Ekq" id="sVa-Bn-ox5"/>
+                        <outlet property="Y" destination="hsa-JT-c4i" id="bA9-tJ-aJG"/>
+                        <outlet property="Z" destination="qVS-IC-Hpm" id="Wy6-3C-5yy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="u34-0N-v0L" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
+            <point key="canvasLocation" x="1152" y="355"/>
+        </scene>
+        <!--Game View Navigation Controller-->
+        <scene sceneID="87M-kS-LUC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KWK-H2-uwr" customClass="GameViewNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="loS-MD-Plg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QTX-KD-fva"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XdA-ub-Rho" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="475" y="355"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hangman1.gif" width="100" height="100"/>
+    </resources>
 </document>
