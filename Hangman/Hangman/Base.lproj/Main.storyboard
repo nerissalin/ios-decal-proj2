@@ -81,10 +81,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b71-j6-sQ3">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b71-j6-sQ3">
                                 <rect key="frame" x="0.0" y="72" width="600" height="339"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Hwr-xo-ufJ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Hwr-xo-ufJ">
                                         <rect key="frame" x="329" y="40" width="200" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="w8T-jS-4iu"/>
@@ -101,7 +101,7 @@
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bpr-wi-jhv">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bpr-wi-jhv">
                                         <rect key="frame" x="329" y="90" width="200" height="144"/>
                                         <attributedString key="attributedText">
                                             <fragment content="-None-">
@@ -114,10 +114,11 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdV-RI-AZt">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdV-RI-AZt">
                                         <rect key="frame" x="20" y="291" width="560" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="xKk-gm-n3i"/>
+                                            <constraint firstAttribute="width" constant="560" id="2IB-dw-496"/>
+                                            <constraint firstAttribute="height" constant="40" id="oWy-WM-Fdy"/>
                                         </constraints>
                                         <attributedString key="attributedText">
                                             <fragment content="Spaces for the word">
@@ -139,18 +140,18 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="GdV-RI-AZt" firstAttribute="centerX" secondItem="b71-j6-sQ3" secondAttribute="centerX" id="4IS-Go-gyK"/>
                                     <constraint firstItem="Kqh-Ti-6Ny" firstAttribute="top" secondItem="Hwr-xo-ufJ" secondAttribute="top" id="DMN-Yg-lsJ"/>
-                                    <constraint firstItem="GdV-RI-AZt" firstAttribute="top" secondItem="b71-j6-sQ3" secondAttribute="top" constant="291" id="I9d-aC-y5p"/>
-                                    <constraint firstItem="GdV-RI-AZt" firstAttribute="centerX" secondItem="b71-j6-sQ3" secondAttribute="centerX" id="IZS-I1-hrN"/>
+                                    <constraint firstItem="GdV-RI-AZt" firstAttribute="top" secondItem="b71-j6-sQ3" secondAttribute="top" constant="291" id="KoD-WN-Wvb"/>
                                     <constraint firstItem="bpr-wi-jhv" firstAttribute="top" secondItem="Hwr-xo-ufJ" secondAttribute="bottom" id="L0K-p3-5Yx"/>
                                     <constraint firstAttribute="trailing" secondItem="Hwr-xo-ufJ" secondAttribute="trailing" constant="71" id="N3T-VP-zKL"/>
                                     <constraint firstItem="bpr-wi-jhv" firstAttribute="trailing" secondItem="Hwr-xo-ufJ" secondAttribute="trailing" id="PJV-8d-BWg"/>
+                                    <constraint firstItem="GdV-RI-AZt" firstAttribute="bottom" secondItem="b71-j6-sQ3" secondAttribute="bottomMargin" id="SCm-Kq-1fp"/>
                                     <constraint firstItem="bpr-wi-jhv" firstAttribute="bottom" secondItem="Kqh-Ti-6Ny" secondAttribute="bottom" id="Uz0-sl-9uT"/>
                                     <constraint firstItem="Kqh-Ti-6Ny" firstAttribute="leading" secondItem="b71-j6-sQ3" secondAttribute="leading" constant="72" id="VrU-3z-vmM"/>
-                                    <constraint firstItem="GdV-RI-AZt" firstAttribute="top" secondItem="Kqh-Ti-6Ny" secondAttribute="bottom" constant="57" id="fU6-QG-9U1"/>
+                                    <constraint firstItem="GdV-RI-AZt" firstAttribute="leading" secondItem="b71-j6-sQ3" secondAttribute="leading" constant="20" id="bGt-Qr-ZtB"/>
                                     <constraint firstItem="Kqh-Ti-6Ny" firstAttribute="top" secondItem="b71-j6-sQ3" secondAttribute="top" constant="40" id="gzV-9v-4Jc"/>
-                                    <constraint firstItem="GdV-RI-AZt" firstAttribute="leading" secondItem="b71-j6-sQ3" secondAttribute="leading" constant="20" id="i2w-NO-cgX"/>
-                                    <constraint firstItem="GdV-RI-AZt" firstAttribute="bottom" secondItem="b71-j6-sQ3" secondAttribute="bottomMargin" id="qkx-hv-mLU"/>
+                                    <constraint firstItem="GdV-RI-AZt" firstAttribute="top" secondItem="Kqh-Ti-6Ny" secondAttribute="bottom" constant="57" id="plb-cW-aqi"/>
                                     <constraint firstItem="Hwr-xo-ufJ" firstAttribute="leading" secondItem="bpr-wi-jhv" secondAttribute="leading" id="uv6-NI-1iS"/>
                                     <constraint firstItem="Hwr-xo-ufJ" firstAttribute="leading" secondItem="Kqh-Ti-6Ny" secondAttribute="trailing" constant="63" id="xFY-xu-eNN"/>
                                 </constraints>
